@@ -1,0 +1,75 @@
+#container{
+    background-image: url(/img1.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    margin: auto;
+    padding: 100px;
+
+}
+
+.content{
+margin: auto;
+background-color:gainsboro      ;
+width: 15%;
+height: 90px;
+text-align: center ;
+outline: black 5px solid;
+box-sizing: border-box;
+line-height: 90px;
+box-sizing:content-box;
+
+}
+
+.content1{
+    border: red solid 5px;
+
+    
+}
+
+.content2{
+
+    border-top: 5px blue solid ;
+    border-bottom: 5px blue solid ;
+    border-right: 5px green solid ;
+    border-left: 5px green solid ;
+
+}
+
+.content3{
+    border-top: 5px red dashed ;
+    border-bottom: 5px blue dashed ;
+    border-right: 5px green dashed ;
+    border-left: 5px yellow dashed ;
+
+}
+
+.element{
+    background-color:gainsboro;
+    width: 400px;
+    margin: auto; 
+    height: 100px;  
+    text-align: center;
+    line-height: 100px;
+    box-sizing: content-box;
+    outline:gainsboro 10px solid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    
+}
+
+.element2{
+    visibility: hidden;
+}
+
+.element1{
+    border-left: red  solid 10px;
+
+
+}
+.element3{
+border-left: green solid 10px
+
+
+}
