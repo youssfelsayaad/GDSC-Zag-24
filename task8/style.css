@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+}
+  .task1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task1 div {
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  text-align: center;
+  background-color: gainsboro;
+  margin-top: 20px;
+  line-height: 60px;
+}
+
+.task1 div:empty {
+  background-color: red;
+}
+
+.task2 {
+  display: flex;
+  flex-direction: column;
+}
+
+p::before {
+  content: attr(data-person);
+  background-color: #bfbebe;
+  padding: 12px;
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 50px;
+}
+
+p {
+  position: relative;
+  background-color: #bfbebe;
+  padding: 12px;
+  border-left: 4px solid #ff0073;
+}
+
+p::after {
+  position: absolute;
+  content: " ";
+  left: -24px;
+  top: 12px;
+  border: 11px solid;
+  border-color: transparent #ff0073 transparent transparent;
+}
+
+.task3 {
+  display: flex;
+  gap: 80px;
+}
+
+
+.task3 div {
+  position: relative;
+  counter-increment: numb;
+  height: 100px;
+  width: 100px;
+  background-color: #eee;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 5px 5px 0px 0px #03a9f4, -5px -5px 0 0 red;
+}
+
+.task3 div::before {
+  position: absolute;
+  content: counter(numb);
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 1px 6px;
+  left: 35px;
+  top: -9px;
+}
+
+.task3 div::after {
+  position: absolute;
+  content: "Element";
+  left: 23px;
+  top: 39px;
+}
+
+
+.task4 {
+  width: 550px;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+.card1,
+.card2 {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  padding: 5px;
+  height: 270px;
+  position: relative;
+}
+.button {
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  padding: 7px 70px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: medium;
+}
+.price {
+  border-radius: 50%;
+  background-color: #dcdbdb;
+  padding: 65px 60px;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.card2::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  left: -43px;
+  background-color: #3fb8ef;
+}
+.card1::after {
+  position: absolute;
+  content: "or";
+  width: fit-content;
+  background-color: #3fb8ef;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 50%;
+  right: -50px;
+  z-index: 1;
+}
